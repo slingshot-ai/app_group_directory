@@ -6,7 +6,8 @@ version: 2.0.0
 homepage: https://github.com/Albert221/app_group_directory
 
 environment:
-  sdk: ">=2.12.0-0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
 
 dependencies:
   flutter:
