@@ -1,16 +1,11 @@
-// Copyright 2019 Ming Chen.
-//
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
+#import "AppGroupDirectoryPlugin.h"
 
-#import "IosAppGroupPlugin.h"
-
-@implementation IosAppGroupPlugin
+@implementation AppGroupDirectoryPlugin
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FlutterMethodChannel* channel = [FlutterMethodChannel
-      methodChannelWithName:@"com.github.mingchen.flutter.plugins/ios_app_group"
+      methodChannelWithName:@"me.wolszon.app_group_directory/channel"
             binaryMessenger:[registrar messenger]];
-  IosAppGroupPlugin* instance = [[IosAppGroupPlugin alloc] init];
+  AppGroupDirectoryPlugin* instance = [[AppGroupDirectoryPlugin alloc] init];
   [registrar addMethodCallDelegate:instance channel:channel];
 }
 

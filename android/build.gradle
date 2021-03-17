@@ -1,4 +1,4 @@
-group 'com.github.mingchen.flutter.plugins.ios_app_group'
+group 'me.wolszon.app_group_directory'
 version '1.0-SNAPSHOT'
 
 buildscript {

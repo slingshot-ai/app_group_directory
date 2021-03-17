@@ -1,22 +1,22 @@
 PODS:
-  - Flutter (1.0.0)
-  - ios_app_group (0.0.1):
+  - app_group_directory (1.0.0):
     - Flutter
+  - Flutter (1.0.0)
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios`)
-  - ios_app_group (from `.symlinks/plugins/ios_app_group/ios`)
+  - app_group_directory (from `.symlinks/plugins/app_group_directory/ios`)
+  - Flutter (from `Flutter`)
 
 EXTERNAL SOURCES:
+  app_group_directory:
+    :path: ".symlinks/plugins/app_group_directory/ios"
   Flutter:
-    :path: ".symlinks/flutter/ios"
-  ios_app_group:
-    :path: ".symlinks/plugins/ios_app_group/ios"
+    :path: Flutter
 
 SPEC CHECKSUMS:
-  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
-  ios_app_group: e4a09208d9f569571322f5083dff28f52c705d5e
+  app_group_directory: 7bf9f8f9819ead554de29da7c25fb7a680d6a9a0
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
 
-PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.1

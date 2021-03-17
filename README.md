@@ -1,31 +1,24 @@
-# Flutter ios_app_group plugin
+# app_group_directory
 
-[![pub package](https://img.shields.io/pub/v/ios_app_group.svg)](https://pub.dev/packages/ios_app_group)
+[![pub package](https://img.shields.io/pub/v/app_group_directory.svg)](https://pub.dev/packages/app_group_directory)
 
 A Flutter plugin to access shared application group container on iOS.
 
 On iOS, this uses the `NSFileManager`'s [containerURLForSecurityApplicationGroupIdentifier](https://developer.apple.com/documentation/foundation/nsfilemanager/1412643-containerurlforsecurityapplicati) API to get app group container URL.
 
-## Install
+## Migration from `ios_app_group` package
 
-Add this to your package's `pubspec.yaml` file:
+- Change `package:ios_app_group/ios_app_group.dart` imports to `package:app_group_directory/app_group_directory.dart`.
+- Change `ios_app_group:` `pubspec.yaml` dependency to `app_group_directory: ^2.0.0`.
+- Change `IosAppGroup` class references to `AppGroupDirectory`.
 
-
-```yaml
-dependencies:
-  ios_app_group: ^1.0.0
-```
-
-## Usage
+s## Usage
 
 ```dart
 import 'dart:io';
-import 'package:ios_app_group/ios_app_group.dart';
 
-// Return null if shared app group is not exist or not accessible.
-Directory sharedDirectory = await IosAppGroup.getAppGroupDirectory('com.example.app1');
+import 'package:app_group_directory/app_group_directory.dart';
+
+Directory? sharedDirectory = await AppGroupDirectory.getAppGroupDirectory('com.example.app');
 ```
 
-# License
-
-BSD. see [LICENSE](LICENSE).

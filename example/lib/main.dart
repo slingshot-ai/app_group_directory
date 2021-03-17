@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
 import 'dart:async';
-
-import 'package:flutter/services.dart';
-import 'package:ios_app_group/ios_app_group.dart';
 import 'dart:io';
+
+import 'package:app_group_directory/app_group_directory.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,12 +23,12 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    Directory sharedDirectory;
+    Directory? sharedDirectory;
     // Platform messages may fail, so we use a try/catch PlatformException.
 
     try {
-      sharedDirectory =
-          await IosAppGroup.getAppGroupDirectory('com.github.mingchen.test');
+      sharedDirectory = await AppGroupDirectory.getAppGroupDirectory(
+          'com.github.mingchen.test');
       debugPrint('getAppGroupDirectory: $sharedDirectory');
     } on PlatformException catch (ex) {
       debugPrint('Failed to call native method: $ex');
