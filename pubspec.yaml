@@ -1,5 +1,7 @@
 name: app_group_directory
-description: A Flutter plugin to access shared application group container on iOS.
+description: >-
+  Retrieve App Group directory on iOS.
+  Port of FileManager.containerURL to Flutter.
 version: 2.0.0
 homepage: https://github.com/Albert221/app_group_directory
 
