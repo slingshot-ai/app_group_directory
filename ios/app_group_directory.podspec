@@ -2,7 +2,7 @@
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 Pod::Spec.new do |s|
-  s.name             = 'ios_app_group'
+  s.name             = 'app_group_directory'
   s.version          = '1.0.0'
   s.summary          = 'Flutter plugin to access get shared app group on iOS'
   s.description      = <<-DESC

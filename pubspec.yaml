@@ -1,11 +1,12 @@
-name: ios_app_group
-description: A Flutter plugin to access shared application group container on iOS.
-version: 1.0.2
-author: Ming Chen <ming_c@hotmail.com>
-homepage: https://github.com/mingchen/ios_app_group
+name: app_group_directory
+description: >-
+  Retrieve App Group directory on iOS.
+  Port of FileManager.containerURL to Flutter.
+version: 2.0.0
+homepage: https://github.com/Albert221/app_group_directory
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0-0 <3.0.0"
 
 dependencies:
   flutter:
@@ -14,17 +15,14 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  lint: ^1.5.3
 
-# For information on the generic Dart part of this file, see the
-# following page: https://www.dartlang.org/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
-  # This section identifies this Flutter project as a plugin project.
-  # The androidPackage and pluginClass identifiers should not ordinarily
-  # be modified. They are used by the tooling to maintain consistency when
-  # adding or updating assets for this project.
   plugin:
-    androidPackage: com.github.mingchen.flutter.plugins.ios_app_group
-    pluginClass: IosAppGroupPlugin
+    platforms:
+      android:
+        package: me.wolszon.app_group_directory
+        pluginClass: AppGroupDirectoryPlugin
+      ios:
+        pluginClass: AppGroupDirectoryPlugin
 
