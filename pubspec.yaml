@@ -2,12 +2,13 @@ name: app_group_directory
 description: >-
   Retrieve App Group directory on iOS.
   Port of FileManager.containerURL to Flutter.
-version: 2.0.0
+version: 2.0.0+1
 homepage: https://github.com/Albert221/app_group_directory
+publish_to: https://dart.pkg.jetbrains.space/slingshotai/p/main/ashley-protos-dart/
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=2.0.0"
+  sdk: '>=2.19.0 <4.0.0'
+  flutter: ">=2.5.0"
 
 dependencies:
   flutter:
